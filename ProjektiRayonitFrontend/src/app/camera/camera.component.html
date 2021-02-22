@@ -1,0 +1,32 @@
+  <h2 style="text-align: center;">Cameras List</h2>
+  <div class="card-body"> 
+  <table class="table">
+    <thead>
+        <tr>
+          <th>Id</th>
+          <th>Name</th>
+          <th>Model</th>
+          <th>Resolution</th>
+          <th>Ip</th>
+          <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let camera of camerasAll">
+          <td > {{camera.id}}</td>
+          <td > {{camera.name}}</td>
+          <td > {{camera.model}}</td>
+          <td > {{camera.resolution}}</td>
+          <td > {{camera.ip}}</td>
+          <td><button class="buttonDelete" (click)="deleteCamera(camera.id)">Delete</button></td>
+        </tr>
+    </tbody>
+</table>
+</div>
+
+  
+  
+  
+  
+
+  
